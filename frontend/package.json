@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev-rewrite-config": "sed -i '' 's/cheap-module-source-map/eval/' ./node_modules/react-scripts/config/webpack.config.js",
-    "start": "TSC_COMPILE_ON_ERROR=true react-scripts start",
+    "start": "PORT=4040 TSC_COMPILE_ON_ERROR=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
