@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/preset-create-react-app"
   ],
   "framework": "@storybook/react",
+  "staticDirs": ['../storybook-assets'],
   "core": {
     "builder": "webpack5"
   }

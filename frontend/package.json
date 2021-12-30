@@ -21,12 +21,12 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "TSC_COMPILE_ON_ERROR=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6099 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 6099",
+    "build-storybook": "build-storybook"
   },
   "prettier": {
     "tabWidth": 2
