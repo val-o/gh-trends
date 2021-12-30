@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { matchPrimitive } from "shared/match";
 import { ButtonGroup, ButtonGroupItem, PageBody, PageHeader } from "ui-kit";
+import { DevelopersPane } from "./Developer";
 import { RepositoriesPane } from "./Repository";
 
 export enum TrendingTab {
@@ -48,7 +49,9 @@ export const TrendingPage: React.FC<TrendingPageProps> = ({ tab }) => {
           [TrendingTab.Repositories]: () => (
             <RepositoriesPane startHeaderContent={renderSwitch()} />
           ),
-          [TrendingTab.Developers]: () => <></>,
+          [TrendingTab.Developers]: () => (
+            <DevelopersPane startHeaderContent={renderSwitch()} />
+          ),
         })}
       </PageBody>
     </>
