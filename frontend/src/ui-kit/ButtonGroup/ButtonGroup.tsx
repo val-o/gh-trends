@@ -45,15 +45,15 @@ const useItemStyles = createUseStyles((theme) => ({
       textDecoration: "none",
     },
     "&:first-child": {
-      borderStartStartRadius: 6,
-      borderEndStartRadius: 6,
+      borderTopLeftRadius: theme.borderRadius.normal,
+      borderBottomLeftRadius: theme.borderRadius.normal,
     },
     "&:not(:first-child)": {
       borderLeft: "none",
     },
     "&:last-child": {
-      borderStartEndRadius: 6,
-      borderEndEndRadius: 6,
+      borderTopRightRadius: theme.borderRadius.normal,
+      borderBottomRightRadius: theme.borderRadius.normal,
     },
   },
   active: {

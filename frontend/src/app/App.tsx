@@ -15,6 +15,7 @@ const useGlobalStyles = createUseStyles((theme) => ({
     fontFamily: `-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"`,
     backgroundColor: theme.palette.bgPrimary,
     lineHeight: 1.5,
+    margin: 0,
   },
 }));
 
