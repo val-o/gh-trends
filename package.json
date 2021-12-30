@@ -1,0 +1,16 @@
+{
+  "name": "gh-trends",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Valikhan Akhmedov <valikhan.akhmedov@aitupay.kz>",
+  "license": "MIT",
+  "scripts": {
+    "start-fe": "cd frontend && yarn && yarn build && yarn serve",
+    "start-sv": "cd server && yarn && yarn start",
+    "start": "concurrently --kill-others \"yarn start-fe\" \"yarn start-sv\"",
+    "e2e": "cd e2e && yarn test"
+  },
+  "dependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
