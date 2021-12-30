@@ -8,6 +8,7 @@
     "start-fe": "cd frontend && yarn && yarn build && yarn serve",
     "start-sv": "cd server && yarn && yarn start",
     "start": "concurrently --kill-others \"yarn start-fe\" \"yarn start-sv\"",
+    "storybook": "cd frontend && yarn storybook",
     "e2e": "cd e2e && yarn test"
   },
   "dependencies": {
