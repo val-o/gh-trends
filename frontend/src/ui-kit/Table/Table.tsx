@@ -4,7 +4,7 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles((theme) => ({
   root: {
     overflow: "hidden",
-    borderRadius: 6,
+    borderRadius: theme.borderRadius.normal,
     border: `thin ${theme.palette.border} solid`,
   },
 }));
