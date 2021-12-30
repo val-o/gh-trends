@@ -32,9 +32,13 @@ export const PageHeader: React.VFC<PageHeaderProps> = ({ subtitle, title }) => {
   const classes = useStyles();
 
   return (
-    <header className={classes.root}>
-      <h1 className={classes.title}>{title}</h1>
-      <h2 className={classes.subtitle}>{subtitle}</h2>
+    <header data-testid="PageHeader" className={classes.root}>
+      <h1 data-testid="PageHeader_Title" className={classes.title}>
+        {title}
+      </h1>
+      <h2 data-testid="PageHeader_Subtitle" className={classes.subtitle}>
+        {subtitle}
+      </h2>
     </header>
   );
 };

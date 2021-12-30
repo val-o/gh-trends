@@ -23,7 +23,11 @@ export const ButtonGroup: React.FC<ButtonGroupProps> = React.forwardRef<
       React.cloneElement(item, { active: item.props.value === value })
     );
 
-  return <div className={classes.root}> {items}</div>;
+  return (
+    <div data-testid="ButtonGroup" className={classes.root}>
+      {items}
+    </div>
+  );
 });
 
 const useItemStyles = createUseStyles((theme) => ({
@@ -69,15 +73,24 @@ export type ButtonGroupItemProps = {
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 export const ButtonGroupItem: React.FC<ButtonGroupItemProps> = ({
   active,
+  value,
   as: asProp,
   ...rest
 }) => {
   const classes = useItemStyles();
+
+  const dataAttrs = {
+    "data-testid": "ButtonGroupItem",
+    "data-value": value,
+    "data-active": active,
+  };
+
   // eslint-disable-next-line jsx-a11y/anchor-has-content
   const elem: AnchorElement = asProp ?? <a />;
   return React.cloneElement(elem, {
     ...rest,
     className: clsx(classes.root, active && classes.active),
+    ...(dataAttrs as {}),
   });
 };
 

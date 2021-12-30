@@ -95,7 +95,7 @@ export const RepositoryCard: React.VFC<RepositoryCardProps> = ({
 
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} data-testid="RepositoryCard">
         <div className={classes.startContent}>
           <div className={classes.title}>
             <BookIcon color="secondary" className={classes.titleIcon} />

@@ -60,7 +60,7 @@ export const DeveloperCard: React.VFC<DeveloperCardProps> = ({
 
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} data-testid="DeveloperCard">
         <div className={classes.indexWrap}>
           <Typography className={classes.index} color="secondary">
             {index}
