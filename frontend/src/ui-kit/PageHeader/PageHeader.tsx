@@ -8,7 +8,7 @@ const useStyles = createUseStyles((theme) => ({
     paddingInline: theme.space(2),
     paddingBlock: theme.space(5),
     borderBottom: `thin ${theme.palette.border} solid`,
-    marginBottom: theme.space(4),
+    marginBlockEnd: theme.space(5),
   },
   title: {
     color: theme.palette.primary,
