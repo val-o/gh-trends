@@ -7,7 +7,6 @@ const fetchData = (section) => async (req, res) => {
     const result = await githubTrends({ section: section });
     res.json(result);
   } catch (e) {
-    console.log(e);
     res.status(500).end();
   }
 };

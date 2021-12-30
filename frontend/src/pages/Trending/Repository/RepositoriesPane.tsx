@@ -20,8 +20,6 @@ export const RepositoriesPane: React.FC<RepositoriesPaneProps> = ({
 }) => {
   const reposState = useRepositoriesQuery();
 
-  console.log(reposState);
-
   const renderTableBody = (): React.ReactElement =>
     ReactQuery.matchState(reposState, {
       Error: () => <TableError text="Unexpected error occured" />,
